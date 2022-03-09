@@ -1,0 +1,94 @@
+#include <Arduino.h>
+#include <driver/gpio.h>
+
+//#include "FS.h"
+#include <LittleFS.h>
+#define SPIFFS LITTLEFS
+
+#define LED_AMBER GPIO_NUM_18
+#define LED_CYAN  GPIO_NUM_19
+#define LED_RED   GPIO_NUM_3
+#define LED_GREEN GPIO_NUM_4
+#define LED_BLUE  GPIO_NUM_5
+
+
+void printDirectory(File dir, int numTabs) {
+  while (true) {
+ 
+    File entry =  dir.openNextFile();
+    if (! entry) {
+      // no more files
+      break;
+    }
+    for (uint8_t i = 0; i < numTabs; i++) {
+      Serial.print('\t');
+    }
+    Serial.print(entry.name());
+    if (entry.isDirectory()) {
+      Serial.println("/");
+      printDirectory(entry, numTabs + 1);
+    } else {
+      // files have sizes, directories do not
+      Serial.print("\t\t");
+      Serial.println(entry.size(), DEC);
+    }
+    entry.close();
+  }
+}
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(LED_RED,   OUTPUT);
+  pinMode(LED_GREEN, OUTPUT);
+  pinMode(LED_BLUE,  OUTPUT);
+
+  pinMode(LED_AMBER, OUTPUT);
+  pinMode(LED_CYAN,  OUTPUT);
+  gpio_set_direction(LED_AMBER, GPIO_MODE_INPUT_OUTPUT);  //compatibility for ESP-C3 digitalRead
+  gpio_set_direction(LED_CYAN, GPIO_MODE_INPUT_OUTPUT);   //compatibility for ESP-C3 digitalRead
+
+  digitalWrite(LED_CYAN, HIGH);
+  digitalWrite(LED_AMBER, LOW);
+
+  Serial.begin(115200);
+  while (!Serial){}
+  delay(500);
+
+  // Initialize LittleFS
+  if (!LittleFS.begin(false /* false: Do not format if mount failed */)) {
+    Serial.println("Failed to mount LittleFS");
+    if (!LittleFS.begin(true /* true: format */)) {
+      Serial.println("Failed to format LittleFS");
+      } else {
+      Serial.println("LittleFS formatted successfully");
+      }
+  }  else { // Initial mount success
+    Serial.println("Success mount LittleFS!");
+    // Open dir folder
+    File dir = LittleFS.open("/");
+    // Cycle all the content
+    printDirectory(dir, 1);
+  }
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  digitalWrite(LED_RED,   HIGH);
+  digitalWrite(LED_GREEN, LOW);
+  digitalWrite(LED_BLUE,  LOW);
+  delay(500);
+  
+  digitalWrite(LED_RED,   LOW);
+  digitalWrite(LED_GREEN, HIGH);
+  digitalWrite(LED_BLUE,  LOW);
+  delay(500);
+
+  digitalWrite(LED_RED,   LOW);
+  digitalWrite(LED_GREEN, LOW);
+  digitalWrite(LED_BLUE,  HIGH);
+  delay(500);
+
+
+  digitalWrite(LED_AMBER, !digitalRead(LED_AMBER));
+  digitalWrite(LED_CYAN, !digitalRead(LED_CYAN)); 
+}
