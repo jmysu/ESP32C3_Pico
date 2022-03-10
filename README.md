@@ -1,4 +1,4 @@
-# ESP32-C3-LittleFS
+# ESP32C3_Pico
  
  ESP32-C3 platformIO startup, works with espC3_Pico(paper design WIP) <br>
 
