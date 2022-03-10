@@ -41,17 +41,20 @@ void heartBeatPrint()
   }
 }
 
+extern void checkNTP();
 void check_status()
 {
   static unsigned long checkstatus_timeout = 0;
 
   //KH
-#define HEARTBEAT_INTERVAL    20000L
+#define HEARTBEAT_INTERVAL    60000L
   // Print hearbeat every HEARTBEAT_INTERVAL (20) seconds.
   if ((millis() > checkstatus_timeout) || (checkstatus_timeout == 0))
   {
     heartBeatPrint();
     checkstatus_timeout = millis() + HEARTBEAT_INTERVAL;
+
+    checkNTP();
   }
 }
 
@@ -59,6 +62,7 @@ void check_status()
 const char NewCustomsStyle[] /*PROGMEM*/ = "<style>div,input{padding:5px;font-size:1em;}input{width:95%;}body{text-align: center;}\
 button{background-color:blue;color:white;line-height:2.4rem;font-size:1.2rem;width:100%;}fieldset{border-radius:0.3rem;margin:0px;}</style>";
 #endif
+
 
 void setup()
 {
