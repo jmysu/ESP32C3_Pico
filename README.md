@@ -4,6 +4,8 @@
 
 <img src= "hardware/espC3_Pico_Top.png" width=400><img src= "hardware/espC3_Pico_Bottom.png" width=300>
 <br>
+<img src= "pic/espC3_Pico_0310.gif">
+<br>
 <br>
 
 Works platformIO project w/ ESP32-C3 & LittleFS
