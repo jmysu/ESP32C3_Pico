@@ -63,7 +63,7 @@ const char NewCustomsStyle[] /*PROGMEM*/ = "<style>div,input{padding:5px;font-si
 button{background-color:blue;color:white;line-height:2.4rem;font-size:1.2rem;width:100%;}fieldset{border-radius:0.3rem;margin:0px;}</style>";
 #endif
 
-
+extern void setupTicker();
 void setup()
 {
   // Debug console
@@ -72,7 +72,8 @@ void setup()
 
   delay(200);
   pinMode(LED_BUILTIN, OUTPUT);
-
+  setupTicker();
+  
   Serial.print(F("\nStarting ESPAsync_WiFi using ")); Serial.print(FS_Name);
   Serial.print(F(" on ")); Serial.println(ARDUINO_BOARD);
   Serial.println(ESP_ASYNC_WIFI_MANAGER_LITE_VERSION);
