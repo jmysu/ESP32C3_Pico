@@ -12,5 +12,5 @@ Works platformIO project w/ ESP32-C3 & LittleFS
  
 
 ## References
-- [AiThinker ESP32C3](https://docs.ai-thinker.com/en/esp32c3) AiThinker C3 modules.
-- [AsyncTelegram2](https://github.com/cotestatnt/AsyncTelegram2)  A nice Telegram bot w/ async SSL WiFi.
+- [Ai-Thinker ESP32-C3](https://docs.ai-thinker.com/en/esp32c3) Ai-Thinker ESP32-C3 modules.
+- [AsyncTelegram2](https://github.com/cotestatnt/AsyncTelegram2)  AsyncTelegram2 bot for more mcu.
