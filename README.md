@@ -17,4 +17,5 @@ Works w/ Telegram Bot<br>
 
 ## References
 - [Ai-Thinker ESP32-C3](https://docs.ai-thinker.com/en/esp32c3) Ai-Thinker ESP32-C3 modules.
+- [LittleFS](https://github.com/lorol/LITTLEFS) ESP32 LittleFS.
 - [AsyncTelegram2](https://github.com/cotestatnt/AsyncTelegram2)  AsyncTelegram2 bot for more mcu.
