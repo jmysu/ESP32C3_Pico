@@ -13,4 +13,4 @@ Works platformIO project w/ ESP32-C3 & LittleFS
  
 
 ## References
--[AsyncTelegram2](https://github.com/cotestatnt/AsyncTelegram2)  A nice Telegram bot
+- [AsyncTelegram2](https://github.com/cotestatnt/AsyncTelegram2)  A nice Telegram bot
