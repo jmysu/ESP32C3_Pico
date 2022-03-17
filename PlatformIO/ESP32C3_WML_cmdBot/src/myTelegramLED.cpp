@@ -54,8 +54,8 @@ AsyncTelegram2 myBot(client);
 //const char* pass  =  "xxxxxxxxx";     // Password  WiFi network
 
 //t.me/espc3bot
-//5219521794:AAHgTa4uexBr4CZo6hvMmctXaz48TLUbUIk
-const char* token =  "5219521794:AAHgTa4uexBr4CZo6hvMmctXaz48TLUbUIk";  // Telegram token
+//5219xxxxxx:AAHgTa4uexBr4CZo6hvMmctXaz48zzzzzz
+const char* token =  "5219xxxxxx:AAHgTa4uexBr4CZo6hvMmctXaz48xxxxxx";  // Telegram token
 
 const uint8_t LED = 3;
 
