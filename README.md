@@ -4,7 +4,6 @@
 
 <img src= "hardware/espC3_Pico_Top.png" width=400><img src= "hardware/espC3_Pico_Bottom.png" width=300>
 <br>
-<img src= "pic/EspC3_Pico_0316.gif" width=320>
 <br>
 <br>
 
