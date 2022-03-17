@@ -9,7 +9,10 @@
 
 Works platformIO project w/ ESP32-C3 & LittleFS
 <img src= "pic/ESP32C3.png">
- 
+<br> 
+Works w/ Telegram Bot
+<img src= "espC3cmdBot.png">
+<br>
 
 ## References
 - [Ai-Thinker ESP32-C3](https://docs.ai-thinker.com/en/esp32c3) Ai-Thinker ESP32-C3 modules.
