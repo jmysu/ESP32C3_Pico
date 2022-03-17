@@ -11,7 +11,7 @@ Works platformIO project w/ ESP32-C3 & LittleFS
 <img src= "pic/ESP32C3.png">
 <br> 
 Works w/ Telegram Bot
-<img src= "espC3cmdBot.png">
+<img src= "pic/espC3cmdBot.png">
 <br>
 
 ## References
