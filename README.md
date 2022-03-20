@@ -17,14 +17,14 @@ Works w/ Telegram Bot<br>
 
 ## References
 <br>
-#### ESP32-C3<br>
-___
+ ### ESP32-C3 <br>
+ ___ <br>
 - [Ai-Thinker ESP32-C3](https://docs.ai-thinker.com/en/esp32c3) Ai-Thinker ESP32-C3 modules.
 - [LittleFS](https://github.com/lorol/LITTLEFS) ESP32 LittleFS.
 - [AsyncTelegram2](https://github.com/cotestatnt/AsyncTelegram2)  AsyncTelegram2 bot for more mcu.
 - 
 <br>
-#### RP2040<br> 
-___
+ ### RP2040 <br> 
+ ___ <br>
 - [MicroPython for RPi-Pico](https://micropython.org/download/rp2-pico/) RPi-microPython .uf2
 -
