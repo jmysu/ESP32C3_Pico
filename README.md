@@ -2,7 +2,7 @@
  
  ESP32-C3 platformIO startup, works with espC3_Pico(paper design WIP) <br>
 
-<img src= "pic/espC3picoKit.png" width=600><img src= "pic/espC3_Pico_0218.gif" width=300>
+<img src= "pic/espC3picoKit.png" width=600><img src= "pic/espC3pico_0318.gif" width=400>
 <br>
 <br>
 <br>
