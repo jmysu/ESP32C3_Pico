@@ -28,5 +28,6 @@ Works w/ Telegram Bot<br>
 ### RP2040  
 
 - [MicroPython for RPi-Pico](https://micropython.org/download/rp2-pico/) RPi-microPython .uf2
+- [Wokwi virtual device](https://docs.wokwi.com/) A virtual device playground
 - [Wokwi RP2040 simulation](https://wokwi.com/projects/300504213470839309) Wokwi LED blink w/ micropython
 - <br>
