@@ -16,6 +16,7 @@ Works w/ Telegram Bot<br>
 <br>
 
 ## References
+- [eagle2fritzing](https://github.com/squix78/eagle2fritzing-parent) Eagle brd to Fritzing parts convert<br>
 
 ### ESP32-C3  
  
