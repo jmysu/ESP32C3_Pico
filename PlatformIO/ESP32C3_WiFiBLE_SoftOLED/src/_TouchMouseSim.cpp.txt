@@ -1,0 +1,121 @@
+/* _TouchMouseSim.cpp
+ *
+ *  TouchMouse Simulator
+ *
+ * MTC7000/3100 Touch
+ * -----------------------
+ * Byte0: 1D01100R
+ * Byte1: 06543210  X-low
+ * Byte2: 000BA987  X-high
+ * Byte3: 06543210  Y-low
+ * Byte4: 000BA987  Y-high
+ * ------------------------
+ *
+ */
+
+#include <Arduino.h>
+#include <esp_log.h>
+#include <Ticker.h>
+Ticker tickerSendTouch;
+
+#include <SoftwareSerial.h>
+SoftwareSerial serialTouch, serialMouse;
+
+
+static const char *TAG = "TouchMouse";
+extern void printESP32info();
+
+
+//---------------------------------------------------------------------------
+/*
+ * MTC7000/3100 Touch
+ * -----------------------
+ * Byte0: 1D01100R
+ * Byte1: 06543210  X-low
+ * Byte2: 000BA987  X-high
+ * Byte3: 06543210  Y-low
+ * Byte4: 000BA987  Y-high
+ * ------------------------
+ */ 
+/* Encodes a 5 bytes touch packet */
+void encodeTouchPacket(uint16_t x, uint16_t y, bool lb, bool rb, unsigned char* output)
+{
+    output[0] = 0b10011000 | (lb?0b01000000:0x00) | (rb?0b00000001:0x00);
+    output[1] = x & 0x007F;
+    output[2] = (x>>7) & 0x001F;
+    output[3] = y & 0x007F;
+    output[4] = (y>>7) & 0x001F;  
+    log_d("Touch:[%02X] [%02X%02X] [%02X%02X]", output[0],output[1],output[2],output[3],output[4]);
+}
+void sendTouchEvent(int16_t deltaX, int16_t deltaY, bool lb, bool rb) {
+  uint8_t packet[5];
+  encodeTouchPacket(deltaX, deltaY, lb, rb, packet);
+  serialTouch.write(packet, 5);
+}
+//CallBack for tickerSendTouch 
+int16_t ix=1;
+void sendTouchCB()
+{
+    ix+=100;
+    if (ix>4096) ix=1;
+    log_d("ix=%d", ix);
+    sendTouchEvent(ix, ix-1, (ix-1)%200, (ix-1)%200);
+    log_d("Touch:%d", ix);
+}
+/*
+ * MTC7000/3100 Touch
+ * -----------------------
+ * Byte0: 1D01100R
+ * Byte1: 06543210  X-low
+ * Byte2: 000BA987  X-high
+ * Byte3: 06543210  Y-low
+ * Byte4: 000BA987  Y-high
+ * ------------------------
+ */ 
+void decodeTouchPacket(uint8_t *packet)
+{
+    int x,y;
+    if (packet[0]&0b10011000) {
+        bool bl = packet[0]&0b01000000;
+        bool br = packet[0]&0b00000001;
+        uint16_t x = packet[2]<<7 | packet[1];
+        uint16_t y = packet[4]<<7 | packet[3];
+        log_d("Got Touch [%d %d] %d,%d", bl,br,x,y);
+        }
+}
+//-----------------------------------------------------------------------------
+
+void setup() {
+     // Set up serial port and wait until connected
+    Serial.begin(115200);
+    while(!Serial){}
+
+    #if defined(ESP32)
+        printESP32info();
+    #endif
+
+    log_e("%s", "Give me FIVE!");
+    log_v("%s", "Starting TouchMouse...");
+    //serialMouse.begin(1200, SWSERIAL_7N1, -1, 19); //TX only
+    //serialTouch.begin(9600, SWSERIAL_8N1, -1, 18);//TX only
+    serialTouch.begin(9600, SWSERIAL_8N1, 19, 18);
+    tickerSendTouch.attach(5.0, sendTouchCB);
+}
+
+
+void loop() {
+    /*
+    log_i("Sending mouse:%d", iCount++);
+    for (char ch = ' '; ch <= 'z'; ch++) {
+        serialMouse.write(ch);
+        }
+    serialMouse.println();
+    delay(5000);
+    */
+    uint8_t buf[5];
+    while (serialTouch.available() > 0) {
+        serialTouch.readBytes(buf, 5);
+        decodeTouchPacket(buf);
+        yield();
+        }
+}
