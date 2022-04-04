@@ -15,5 +15,5 @@ MyModbus [WiFi Modbus Project](https://github.com/jmysu/ESP32C3_Pico/tree/main/P
 <img src="myModbusUtility.png" width=480>
 <br>
 ### References
-- [eModbus](https://github.com/eModbus/eModbus)Arduino modbus library.
-- [myModbusUtility](https://github.com/jmysu/RPI-ModbusClient)QT5 modbus utility
+- [eModbus](https://github.com/eModbus/eModbus) Arduino modbus library.
+- [myModbusUtility](https://github.com/jmysu/RPI-ModbusClient) QT5 modbus utility
