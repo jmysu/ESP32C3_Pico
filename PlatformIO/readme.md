@@ -11,9 +11,9 @@ A NTP Clock w/ bitbang OLED I2C.    [NTP Clock Project](https://github.com/jmysu
 - [BitBang I2C](https://github.com/bitbank2/BitBang_I2C) BitBang software I2C
 <br>
 
-MyModbus <br>
+MyModbus [WiFi Modbus Project](https://github.com/jmysu/ESP32C3_Pico/tree/main/PlatformIO/ESP32C3_WiFi_Modbus)<br>
 <img src="myModbusUtility.png" width=320>
 <br>
 ### References
-- [eModbus]()Arduino modbus library
-
+- [eModbus](https://github.com/eModbus/eModbus)Arduino modbus library.
+- [myModbusUtility](https://github.com/jmysu/RPI-ModbusClient)QT5 modbus utility
