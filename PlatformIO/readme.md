@@ -9,7 +9,7 @@ A NTP Clock w/ bitbang OLED I2C.    [NTP Clock Project](https://github.com/jmysu
 - [ESP32 Async WiFiManagerLite](https://github.com/khoih-prog/ESPAsync_WiFiManager_Lite) WiFi Manager for ESP32<br>
 - [Time](https://github.com/PaulStoffregen/Time) TimeLib <br>
 - [BitBang I2C](https://github.com/bitbank2/BitBang_I2C) BitBang software I2C<br>
------ <br>
+___<br>
 
 MyModbus [WiFi Modbus Project](https://github.com/jmysu/ESP32C3_Pico/tree/main/PlatformIO/ESP32C3_WiFi_Modbus)<br>
 <img src="myModbusUtility.png" width=480>
@@ -17,11 +17,11 @@ MyModbus [WiFi Modbus Project](https://github.com/jmysu/ESP32C3_Pico/tree/main/P
 ### References
 - [eModbus](https://github.com/eModbus/eModbus) Arduino modbus library.
 - [myModbusUtility](https://github.com/jmysu/RPI-ModbusClient) QT5 modbus utility<br>
------ <br>
+___<br>
 
 Another Faster WiFiManager [WiFi Man](https://github.com/jmysu/ESP32C3_Pico/tree/main/PlatformIO/ESP32C3_WiFiMan)<br>
 <img src="C3WiFiMan.png" width=640>
 <br>
 ### References
 - [ESP WiFiManager](https://github.com/tzapu/WiFiManager) A Faster WiFi Manager w/ WebPortal!<br>
------ <br>
+___<br>
