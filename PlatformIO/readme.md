@@ -23,4 +23,4 @@ Another Faster WiFiManager [WiFi Man](https://github.com/jmysu/ESP32C3_Pico/tree
 <img src="C3WiFiMan.png" width=640>
 <br>
 ### References
--[ESP WiFiManager](https://github.com/tzapu/WiFiManager) A Faster WiFi Manager w/ WebPortal!
+- [ESP WiFiManager](https://github.com/tzapu/WiFiManager) A Faster WiFi Manager w/ WebPortal!
