@@ -19,8 +19,8 @@ MyModbus [WiFi Modbus Project](https://github.com/jmysu/ESP32C3_Pico/tree/main/P
 - [myModbusUtility](https://github.com/jmysu/RPI-ModbusClient) QT5 modbus utility
 <br>
 
-Another faster WiFiManager [WiFi Man]()<br>
+Another Faster WiFiManager [WiFi Man](https://github.com/jmysu/ESP32C3_Pico/tree/main/PlatformIO/ESP32C3_WiFiMan)<br>
 <img src="C3WiFiMan.png" width=640>
 <br>
 ### References
--[ESP WiFiManager]() A faster WiFi Manager w/ web portal!
+-[ESP WiFiManager](https://github.com/tzapu/WiFiManager) A Faster WiFi Manager w/ WebPortal!
