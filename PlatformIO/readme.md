@@ -23,11 +23,11 @@ MyModbus [WiFi Modbus Project](https://github.com/jmysu/ESP32C3_Pico/tree/main/P
 ___
 <br>
 
-Another Faster WiFiManager [WiFi Man](https://github.com/jmysu/ESP32C3_Pico/tree/main/PlatformIO/ESP32C3_WiFiMan)<br>
+Another CaptivePortal WiFiManager [WiFi Man](https://github.com/jmysu/ESP32C3_Pico/tree/main/PlatformIO/ESP32C3_WiFiMan)<br>
 <img src="C3WiFiMan.png" width=640>
 <br>
 ### References
-- [ESP WiFiManager](https://github.com/tzapu/WiFiManager) A Faster WiFi Manager w/ Web CaptivePortal!<br>
+- [ESP WiFiManager](https://github.com/tzapu/WiFiManager) A Fast & Easy WiFi Manager w/ Web CaptivePortal settings!<br>
 
 ___
 <br>
