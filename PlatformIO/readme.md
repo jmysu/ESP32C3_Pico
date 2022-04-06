@@ -20,7 +20,7 @@ MyModbus [WiFi Modbus Project](https://github.com/jmysu/ESP32C3_Pico/tree/main/P
 <br>
 
 Another faster WiFiManager [WiFi Man]()<br>
-<img src="C3WiFiMan.png" width=500>
+<img src="C3WiFiMan.png" width=640>
 <br>
 ### References
 -[ESP WiFiManager]() A faster WiFi Manager w/ web portal!
