@@ -31,3 +31,12 @@ Another CaptivePortal WiFiManager [WiFi Man](https://github.com/jmysu/ESP32C3_Pi
 
 ___
 <br>
+
+Finally, put together the AsyncWebServer+LittleFS+FSBrowser+WebSocket w/ ESP32-C3 []()
+<img src="C3FsBrowser.png" width=640>
+<br>
+### References
+- [ESP32 AsyncWebserver]() The ESP AsyncWebServer Mod for ESP32-C3+LittleFS <br>
+
+___
+<br>
