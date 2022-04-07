@@ -23,7 +23,7 @@ MyModbus [WiFi Modbus Project](https://github.com/jmysu/ESP32C3_Pico/tree/main/P
 ___
 <br>
 
-Another CaptivePortal WiFiManager [WiFi Man](https://github.com/jmysu/ESP32C3_Pico/tree/main/PlatformIO/ESP32C3_WiFiMan)<br>
+Another CaptivePortal WiFiManager [WiFiMan](https://github.com/jmysu/ESP32C3_Pico/tree/main/PlatformIO/ESP32C3_WiFiMan)<br>
 <img src="C3WiFiMan.png" width=640>
 <br>
 ### References
@@ -32,11 +32,11 @@ Another CaptivePortal WiFiManager [WiFi Man](https://github.com/jmysu/ESP32C3_Pi
 ___
 <br>
 
-Finally, put together the AsyncWebServer+LittleFS+FSBrowser+WebSocket w/ ESP32-C3 []()
+Finally, put together the AsyncWebServer+LittleFS+FSBrowser+WebSocket w/ ESP32-C3 [WiFiMan FSBrowser](https://github.com/jmysu/ESP32C3_Pico/tree/main/PlatformIO/ESP32C3_WiFiManFSBrowser)
 <img src="C3FsBrowser.png" width=640>
 <br>
 ### References
-- [ESP32 AsyncWebserver]() The ESP AsyncWebServer Mod for ESP32-C3+LittleFS <br>
+- [ESP32 AsyncWebserver](https://github.com/DmytroKorniienko/ESPAsyncWebServer/tree/ESPAsyncWebServerMod) The ESP AsyncWebServer Mod for ESP32-C3+LittleFS <br>
 
 ___
 <br>
