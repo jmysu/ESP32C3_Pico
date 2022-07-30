@@ -1,0 +1,9 @@
+{
+  "wifi_sta_ssid": "BreezeHill_50",
+  "wifi_sta_pass": "0932902190",
+  "wifi_ap_ssid": "NEOJS",
+  "wifi_ap_pass": "",
+  "hostName": "NEOJS",
+  "http_username": "admin",
+  "http_password": "admin"
+}
