@@ -1,6 +1,6 @@
 ## PlatformIO Arduino Projects
 
-ELK3 Javascript running init.js from LittleFS<br>
+ELK3 Javascript running init.js from LittleFS [ELK3lfs Minimum](https://github.com/jmysu/ESP32C3_Pico/tree/main/PlatformIO/ESP32C3_ELK3lfs)<br>
 <img src="ESP32C3_ELK4lfsMin.png">
 <br>
 
