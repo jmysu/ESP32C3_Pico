@@ -1,8 +1,9 @@
 ## PlatformIO Arduino Projects
 
-ELK3 Javascript running init.js from LittleFS
-<img src="ESP32C3_ELK4lfsMin.png" width=320>
+ELK3 Javascript running init.js from LittleFS<br>
+<img src="ESP32C3_ELK4lfsMin.png">
 <br>
+
           
 A NTP Clock w/ bitbang OLED I2C.    [NTP Clock Project](https://github.com/jmysu/ESP32C3_Pico/tree/main/PlatformIO/ESP32C3_WiFi_NTP) <br>
 <img src= "C3NtpClock.gif" width=320>  <img src="C3NtpLog.png" width=640>
