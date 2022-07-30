@@ -41,3 +41,7 @@ Works with Firefox,Chrom,Safari!<br>
 
 ___
 <br>
+
+ELK3 Javascript running init.js from LittleFS
+<img src="ESP32C3%2BELK4lfsMin.png width=320>
+<br>
