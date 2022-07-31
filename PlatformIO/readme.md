@@ -1,5 +1,18 @@
 ## PlatformIO Arduino Projects
 
+### TinyJS/ELK features:
+#### TinyJS:
+ - Variables, Arrays, Structures
+ - JSON parsing and output
+ - Functions
+ - Calling C/C++ code from JavaScript
+ - Objects with Inheritance (not fully implemented)
+ - < 2000 lines
+#### ELK:
+ - Support subset of ES6
+ - Implementation language: C, < 1400lines
+ - Direct recursive interpreter without AST or bytecode VM
+ 
 ELK3 Javascript running init.js from LittleFS [ELK3lfs Minimum](https://github.com/jmysu/ESP32C3_Pico/tree/main/PlatformIO/ESP32C3_ELK3lfs)<br>
 <img src="ESP32C3_ELK4lfsMin.png">
 <br>
