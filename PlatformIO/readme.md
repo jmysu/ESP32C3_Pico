@@ -1,6 +1,6 @@
 ## PlatformIO Arduino Projects
 
-#### TinyJS/ELK features:
+#### TinyJS/ELK
 - _TinyJS:_<br>
   - Variables, Arrays, Structures<br>
   - JSON parsing and output<br>
@@ -16,7 +16,6 @@
 ELK3 Javascript running init.js from LittleFS [ELK3lfs Minimum](https://github.com/jmysu/ESP32C3_Pico/tree/main/PlatformIO/ESP32C3_ELK3lfs)<br>
 <img src="ESP32C3_ELK4lfsMin.png">
 <br>
-
           
 A NTP Clock w/ bitbang OLED I2C.    [NTP Clock Project](https://github.com/jmysu/ESP32C3_Pico/tree/main/PlatformIO/ESP32C3_WiFi_NTP) <br>
 <img src= "C3NtpClock.gif" width=320>  <img src="C3NtpLog.png" width=640>
