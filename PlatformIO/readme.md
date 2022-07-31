@@ -2,16 +2,16 @@
 
 #### TinyJS/ELK features:
 _TinyJS:_<br>
- Variables, Arrays, Structures<br>
- JSON parsing and output<br>
- Functions<br>
- Calling C/C++ code from JavaScript<br>
- Objects with Inheritance (not fully implemented)<br>
- < 2000 lines<br>
-_ELK:_
- Support subset of ES6<br>
- Implementation language: C, < 1400lines<br>
- Direct recursive interpreter without AST or bytecode VM<br>
+  Variables, Arrays, Structures<br>
+  JSON parsing and output<br>
+  Functions<br>
+  Calling C/C++ code from JavaScript<br>
+  Objects with Inheritance (not fully implemented)<br>
+  < 2000 lines<br>
+_ELK:_<br>
+  Support subset of ES6<br>
+  Implementation language: C, < 1400lines<br>
+  Direct recursive interpreter without AST or bytecode VM<br>
  
 ELK3 Javascript running init.js from LittleFS [ELK3lfs Minimum](https://github.com/jmysu/ESP32C3_Pico/tree/main/PlatformIO/ESP32C3_ELK3lfs)<br>
 <img src="ESP32C3_ELK4lfsMin.png">
