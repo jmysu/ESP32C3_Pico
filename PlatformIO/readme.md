@@ -1,6 +1,6 @@
 ## PlatformIO Arduino Projects
 
-#### TinyJS/ELK features:<br>
+#### TinyJS/ELK features:
 - _TinyJS:_<br>
   - Variables, Arrays, Structures<br>
   - JSON parsing and output<br>
