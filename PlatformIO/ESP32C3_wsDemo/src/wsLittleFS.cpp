@@ -53,8 +53,8 @@
 const uint8_t DEBOUNCE_DELAY = 10; // in milliseconds
 
 // WiFi credentials
-const char *WIFI_SSID = "BreezeHill_50";
-const char *WIFI_PASS = "0932902190";
+const char *WIFI_SSID = "BreezeHillxxx";
+const char *WIFI_PASS = "093290xxxx";
 
 // ----------------------------------------------------------------------------
 // Definition of the LED component
