@@ -1,6 +1,6 @@
 # ESP32C3_Pico
  
- ESP32-C3 platformIO startup, works with espC3_Pico(paper design WIP...) <br>
+ ESP32-C3 platformIO startup, works with espC3_Pico(V0) <br>
 
 <img src= "pic/C3Pico2020Spring.jpg" width=640>
 <br>
